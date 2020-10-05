@@ -7,30 +7,43 @@
     h2 {
       display: none;
     }
+
     .buttons {
-      .button {
-        text-decoration: none;
-        &:hover {
-          color: $primary-white-color;
-          background-color: $accent-color;
-          transition: all $time;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      flex-wrap: wrap;
+      @media screen and (min-width: 768px) {
+        justify-content: center;
+      }
+
+      li:not(:last-child) {
+        margin-right: 8px;
+        margin-bottom: 15px;
+        @media screen and (min-width: 768px) {
+          margin-bottom: 0px;
         }
       }
-      a {
-        font-family: "Roboto", sans-serif;
-        font-style: normal;
+      .button {
+        display: flex;
+        flex-wrap: nowrap;
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
-        background: $secondary-background-color;
-        padding: 6px 22px 6px 22px;
-        margin-right: 8px;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-          0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: $primary-text-color;
+        background: #f5f4fa;
         border-radius: 4px;
+        padding: 6px 22px;
+        transition: all $time;
+        text-decoration: none;
+        &:hover {
+          background: #2196f3;
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          color: $primary-white-color;
+        }
       }
     }
   }
