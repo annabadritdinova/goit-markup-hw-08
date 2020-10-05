@@ -1,26 +1,55 @@
 .our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $secondary-background-color;
 
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
   h2 {
     margin-bottom: 50px;
   }
 
   .pros {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 
-    li {
-      width: 270px;
-
-      background:$primary-white-color;
+    .member {
+      width: 100%;
+      margin: 0px;
+      padding-bottom: 24px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      background: $primary-white-color;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
+      @media screen and (min-width: 768px) {
+        width: 354px;
+        &:nth-child(-n + 2) {
+          margin-bottom: 30px;
+        }
+        &:nth-last-child(-n + 2) {
+          margin-bottom: 0px;
+        }
+      }
 
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        margin-bottom: 0px;
+        &:nth-child(-n+2){
+          margin-bottom: 0px;
+        }
+      }
       img {
+        width: 100%;
+        height: auto;
         margin-bottom: 30px;
       }
 
@@ -47,7 +76,6 @@
       }
 
       .social-icon-list {
-        margin-bottom: 30px;
         display: flex;
         justify-content: center;
         li + li {
@@ -55,6 +83,8 @@
         }
         li {
           display: flex;
+          margin-bottom: 0px;
+          padding-bottom: 0px;
           width: 44px;
           height: 44px;
           align-items: center;
@@ -72,12 +102,10 @@
             transition: all $time;
             &:hover {
               background-color: $secondary-accent-color;
-              
             }
             &:hover svg {
               fill: $primary-white-color;
               transition: all $time;
-              
             }
 
             svg {
