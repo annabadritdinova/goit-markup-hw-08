@@ -1,0 +1,129 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  margin-bottom: -1px;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-decoration: none;
+    text-align: center;
+    .logo {
+      font-size: 26px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      margin-right: 93px;
+      display: block;
+    }
+    .site-nav {
+      display: inline-flex;
+      ul {
+        flex-direction: row;
+        list-style: none;
+        display: inline-flex;
+        justify-content: center;
+
+        margin: 0px;
+        height: 100%;
+        padding-left: 0px;
+        a {
+          display: block;
+          height: 100%;
+          padding-top: 32px;
+          padding-bottom: 32px;
+        }
+        li + li {
+          margin-left: 20px;
+        }
+
+        .link-s {
+          color: $accent-color;
+          position: relative;
+          display: block;
+          &::after {
+            bottom: 0px;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 4px;
+            background: $accent-color;
+            border-radius: 2px;
+            position: absolute;
+          }
+        }
+        .link {
+          color: $title-text-color;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.02em;
+          transition: all $time;
+          &:hover {
+            color: $accent-color;
+          }
+          &:focus {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+    .list {
+      margin-left: auto;
+      height: 100%;
+
+      ul {
+        flex-direction: row;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 0px;
+
+
+        li+li{
+          margin-left: 30px;
+        }
+
+        a {
+          color: $primary-category-color;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.02em;
+          padding-top: 32px;
+          padding-bottom: 32px;
+          display: flex;
+          transition: all $time;
+          &:hover {
+            color: $accent-color;
+            
+          }
+          
+        }
+
+        
+        .mail-link {
+          vertical-align: center;
+          display: flex;
+          align-items: center;
+
+          .icon-mail {
+            height: 12px;
+            width: 16px;
+            margin-right: 10px;
+            fill: currentColor;
+          }
+        }
+        .icon-telephone {
+          height: 16px;
+          width: 10px;
+          margin-right: 10px;
+          fill: currentColor;
+        }
+      }
+    }
+  }
+}

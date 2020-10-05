@@ -1,0 +1,80 @@
+.gallery {
+
+  h2{
+    display: none;
+  }
+
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .portfolio-card {
+      list-style: none;
+      border: 1px solid #eeeeee;
+      box-sizing: border-box;
+      margin-bottom: 30px;
+      width: 370px;
+      height: 404px;
+
+      &:hover .card-action {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      &:hover .card-thumb::after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .card-thumb {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+        &:hover {
+          .card-action {
+            transform: translateY(0%);
+          }
+        }
+
+        .card-action {
+          height: 100%;
+          font-style: normal;
+          font-weight: normal;
+          color: $primary-white-color;
+          font-size: 18px;
+          line-height: 1.5em;
+          letter-spacing: 0.03em;
+          position: absolute;
+          display: block;
+          right: 0;
+          top: 0;
+          padding: 63px 24px;
+          transform: translateY(100%);
+          transition: transform $time;
+          background-color: rgba(33, 150, 243, 0.9);
+        }
+      }
+      .name {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: $title-text-color;
+        font-style: normal;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        padding-left: 24px;
+      }
+      .category {
+        font-family: "Roboto" sans-serif;
+        font-size: 16px;
+        color: $primary-category-color;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        padding-left: 24px;
+      }
+    }
+  }
+}

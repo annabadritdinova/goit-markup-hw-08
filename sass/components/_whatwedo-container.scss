@@ -1,0 +1,50 @@
+.whatwedo-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  .whatwedo {
+    margin: auto;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .section-title {
+      margin-bottom: 50px;
+    }
+
+    .images {
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .img-overlay {
+          position: relative;
+
+          .overlay-text {
+            width: 100%;
+            background: rgba(47, 48, 58, 0.8);
+            height: 70px;
+            position: absolute;
+            padding-top: 27px;
+            left: 0;
+            bottom: 4px;
+            margin: 0;
+
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1.1em;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $primary-white-color;
+          }
+        }
+      }
+    }
+  }
+}

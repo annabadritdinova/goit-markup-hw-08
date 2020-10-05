@@ -1,0 +1,54 @@
+.feature-section {
+  padding-top: 94px;
+
+  .feature-list {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    list-style: none;
+
+    .feature-item {
+      width: 270px;
+      .title {
+        font-family: "Roboto", sans-serif;
+
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        
+      }
+
+      .text {
+        color: $title-text-color;
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+      }
+    }
+
+    .feature-item-container {
+      height: 120px;
+      width: 270px;
+      background: $secondary-background-color;
+      border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .icon {
+        width: 70px;
+        height: 70px;
+        margin: 25px 100px;
+      }
+    }
+  }
+}

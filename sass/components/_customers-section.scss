@@ -1,0 +1,36 @@
+.customers-section {
+  background-color: $primary-white-color;
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  .customers-list {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    .customers-container {
+      width: 170px;
+      height: 90px;
+      border-radius: 4px;
+      border: 1px solid $customers-color;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      align-self: center;
+      transition: all $time;
+      &:hover {
+        border: 1px solid $secondary-accent-color;
+      }
+      &:hover svg {
+        fill: $secondary-accent-color;
+        transition: all $time;
+      }
+      svg {
+        fill: $customers-color;
+      }
+    }
+  }
+}

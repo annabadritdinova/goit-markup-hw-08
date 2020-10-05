@@ -1,0 +1,172 @@
+.footer {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+  color: $primary-white-color;
+
+  .container {
+    display: flex;
+    justify-content: start;
+    padding-right: 15px;
+    padding-left: 15px;
+    h3 {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+    }
+
+    .bottom-content {
+      margin-right: 70px;
+
+      a {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        font-style: normal;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .address {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        font-style: normal;
+        display: block;
+        margin-bottom: 9px;
+      }
+
+      .info-mail {
+        color: $primary-category-color;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        margin-bottom: 9px;
+      }
+
+      .info-phone {
+        color: $primary-category-color;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+      }
+    }
+
+    .footer-links {
+      padding-top: 12px;
+
+      .social-icon-list {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        li + li {
+          margin-left: 10px;
+        }
+        li {
+          display: flex;
+          width: 44px;
+          height: 44px;
+          align-items: center;
+          justify-content: center;
+          box-shadow: none;
+
+          .social-icon-link {
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: all $time;
+
+            &:hover {
+              background-color: $secondary-accent-color;
+            }
+            &:hover svg {
+              fill: $primary-white-color;
+            }
+
+            svg {
+              width: 20px;
+              height: 20px;
+              fill: $primary-white-color;
+            }
+          }
+        }
+      }
+    }
+
+    .subscribe {
+      padding-top: 12px;
+      margin-left: auto;
+
+      .subscribe-form {
+        display: flex;
+        align-items: center;
+
+        .subscribe-field {
+          width: 358px;
+          height: 50px;
+          margin-right: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          box-sizing: border-box;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          border-radius: 4px;
+          background: #2f303a;
+          padding-left: 16px;
+          font-size: 16px;
+          transition: all $time;
+
+          &:focus {
+            border-color: $secondary-accent-color;
+          }
+        }
+
+        .subscribe-button {
+          width: 200px;
+          height: 50px;
+          padding-right: 0px;
+          padding-left: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $primary-white-color;
+          background-color: $accent-color;
+          border-color: $accent-color;
+          text-align: center;
+          cursor: pointer;
+          border-style: none;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          border-radius: 4px;
+
+          transition: background-color $time;
+
+          font-size: 16px;
+
+          svg {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
