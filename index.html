@@ -82,7 +82,7 @@
       </div>
     </header> -->
 
-    <!-- <section class="hero">
+    <section class="hero">
       <h1 class="hero-title">
         Эффективные решения
         <br />
@@ -91,7 +91,7 @@
       <div class="button-wrap">
         <button class="button-primary" data-modal-open>Заказать услугу</button>
       </div>
-    </section> -->
+    </section>
 
     <main>
       <section class="feature-section">
@@ -156,28 +156,49 @@
         </div>
       </section>
 
-       <section class="whatwedo-container">
+      <section class="whatwedo-container">
         <div class="whatwedo">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <div class="images">
             <ul>
               <li>
                 <div class="img-overlay">
-                  <img src="./Images/typing.jpg" alt="typing" />
+                  <img
+                    srcset="
+                      ./Images/typing-370.jpg 1x,
+                      ./Images/typing-740.jpg 2x
+                    "
+                    src="./Images/typing-370.jpg"
+                    alt="typing"
+                  />
                   <p class="overlay-text">Десктопные приложения</p>
                 </div>
               </li>
 
               <li>
                 <div class="img-overlay">
-                  <img src="./Images/telephone.jpg" alt="telephone" />
+                  <img
+                    srcset="
+                      ./Images/telephone-370.jpg 1x,
+                      ./Images/telephone-740.jpg  2x
+                    "
+                    src="./Images/telephone-370.jpg"
+                    alt="telephone"
+                  />
                   <p class="overlay-text">Мобильные приложения</p>
                 </div>
               </li>
 
               <li>
                 <div class="img-overlay">
-                  <img src="./Images/hexagone.jpg" alt="hexagone" />
+                  <img
+                    srcset="
+                      ./Images/hexagone-370.jpg 1x,
+                      ./Images/hexagone-740.jpg 2x
+                    "
+                    src="./Images/hexagone-370.jpg"
+                    alt="hexagone"
+                  />
                   <p class="overlay-text">Дизайнерские решения</p>
                 </div>
               </li>
@@ -190,9 +211,13 @@
         <div class="container">
           <h2>Наша команда</h2>
           <ul class="pros">
-            <li class="member" >
+            <li class="member">
               <img
-                src="./Images/ИгорьДемьяненко.jpg"
+                srcset="
+                  ./Images/IgorDemyanenko-370.jpg 1x,
+                  ./Images/IgorDemyanenko-740.jpg 2x
+                "
+                src="./Images/IgorDemyanenko-370.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
               />
@@ -243,8 +268,12 @@
 
             <li class="member">
               <img
-                src="./Images/ОльгаРепина.jpg"
-                alt="Ольга Репина"
+                srcset="
+                  ./Images/OlgaRepina-370.jpg 1x,
+                  ./Images/OlgaRepina-740.jpg 2x
+                "
+                src="./Images/OlgaRepina-370.jpg"
+                alt="Игорь Демьяненко"
                 width="270"
               />
               <h4>Ольга Репина</h4>
@@ -292,10 +321,14 @@
               </ul>
             </li>
 
-            <li class="member" >
+            <li class="member">
               <img
-                src="./Images/НиколайТарасов.jpg"
-                alt="Николай Тарасов"
+                srcset="
+                  ./Images/NikolayTarasov-370.jpg 1x,
+                  ./Images/NikolayTarasov-740.jpg 2x
+                "
+                src="./Images/NikolayTarasov-370.jpg"
+                alt="Игорь Демьяненко"
                 width="270"
               />
               <h4>Николай Тарасов</h4>
@@ -343,10 +376,14 @@
               </ul>
             </li>
 
-            <li class="member" >
+            <li class="member">
               <img
-                src="./Images/МихаилЕрмаков.jpg"
-                alt="Михаил Ермаков"
+                srcset="
+                  ./Images/MikhailErmakov-370.jpg 1x,
+                  ./Images/MikhailErmakov-740.jpg 2x
+                "
+                src="./Images/MikhailErmakov-370.jpg"
+                alt="Игорь Демьяненко"
                 width="270"
               />
               <h4>Михаил Ермаков</h4>
@@ -481,14 +518,17 @@
       <div class="container">
         <div class="bottom-content">
           <ul>
-          <li><a href="/">
-            <img src="./Images/Logofooter.svg" alt="" />
-          </a></li>
-          <li><address class="address">г. Киев, пр-т Леси Украинки, 26</address></li>
-          <li><a href="mailto:" class="info-mail">info@example.com</a></li>
-          
+            <li>
+              <a href="/">
+                <img src="./Images/Logofooter.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+            </li>
+            <li><a href="mailto:" class="info-mail">info@example.com</a></li>
 
-          <li><a href="tel:+" class="info-phone">+38 099 111 11 11</a></li>
+            <li><a href="tel:+" class="info-phone">+38 099 111 11 11</a></li>
           </ul>
         </div>
 
@@ -540,31 +580,28 @@
         <div class="subscribe">
           <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
           <form class="subscribe-form">
-            
-              
-              <input
-                class="subscribe-field"
-                type="email"
-                name="subscribe"
-                placeholder="E-mail"
-              />
-              <button type="submit" class="subscribe-button">
-                Подписаться
-                <svg
-                  class="send-icon"
-                  width="24"
-                  height="24"
-                  viewbox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            
+            <input
+              class="subscribe-field"
+              type="email"
+              name="subscribe"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="subscribe-button">
+              Подписаться
+              <svg
+                class="send-icon"
+                width="24"
+                height="24"
+                viewbox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
           </form>
         </div>
       </div>
