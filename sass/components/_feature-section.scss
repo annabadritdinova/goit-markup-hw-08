@@ -30,7 +30,7 @@
 
       .title {
         text-align: center;
-        font-family: "Roboto", sans-serif;
+        font-family: $font-roboto;
         font-weight: bold;
         font-size: 14px;
         line-height: 16px;
@@ -45,7 +45,7 @@
       .text {
         color: $title-text-color;
         text-align: left;
-        font-family: "Roboto", sans-serif;
+        font-family: $font-roboto;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;

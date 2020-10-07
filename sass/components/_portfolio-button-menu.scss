@@ -25,6 +25,7 @@
         }
       }
       .button {
+        font-family: $font-roboto;
         display: flex;
         flex-wrap: nowrap;
         font-weight: 500;
@@ -33,13 +34,13 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: $primary-text-color;
-        background: #f5f4fa;
+        background: $secondary-background-color;
         border-radius: 4px;
         padding: 6px 22px;
         transition: all $time;
         text-decoration: none;
         &:hover {
-          background: #2196f3;
+          background: $secondary-accent-color;
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
             0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           color: $primary-white-color;

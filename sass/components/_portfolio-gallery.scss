@@ -1,6 +1,5 @@
 .gallery {
   padding-bottom: 60px;
-
   h2 {
     display: none;
   }
@@ -13,7 +12,7 @@
     .portfolio-card {
       width: 100%;
       list-style: none;
-      border: 1px solid #eeeeee;
+      border: 1px solid $border-color;
       box-sizing: border-box;
       margin-bottom: 30px;
       height: auto;
@@ -57,17 +56,28 @@
           font-style: normal;
           font-weight: normal;
           color: $primary-white-color;
-          font-size: 18px;
+          font-size: 16px;
           line-height: 1.5em;
           letter-spacing: 0.03em;
           position: absolute;
           display: block;
           right: 0;
           top: 0;
-          padding: 63px 24px;
+          padding: 30px 12px;
           transform: translateY(100%);
           transition: transform $time;
           background-color: rgba(33, 150, 243, 0.9);
+
+          @media screen and (min-width: 480px) {
+            padding: 77px 24px;
+            font-size: 18px;
+          }
+          @media screen and (min-width: 768px) {
+            padding: 49px 24px;
+          }
+          @media screen and (min-width: 1200px) {
+            padding: 63px 24px;
+          }
         }
       }
       .name {

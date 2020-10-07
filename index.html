@@ -19,68 +19,88 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <a href="./index.html" class="logo">
-          <img src="./Images/WebStudio.svg" alt="" />
+          Web<span>Studio</span>
         </a>
 
-        <nav class="site-nav">
-          <ul>
-            <li class="link-s">
-              <a href="" class="current-link link" style="text-decoration: none"
-                >Студия</a
-              >
-            </li>
+        <button type="button" class="menu-button" data-menu-button>
+          <svg height="16" width="24" aria-label="Mobile menu switcher">
+            <use
+              class="icon-menu"
+              href="./Images/icons/sprite.svg#burger"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./Images/icons/sprite.svg#header-close"
+            ></use>
+          </svg>
+        </button>
 
-            <li>
-              <a
-                href="./portfolio.html"
-                class="link"
-                style="text-decoration: none"
-                >Портфолио</a
-              >
-            </li>
-            <li>
-              <a href="" class="link" style="text-decoration: none">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header-navigation">
+          <nav class="site-nav">
+            <ul class="header-links">
+              <li class="link-s">
+                <a
+                  href=""
+                  class="current-link link"
+                  style="text-decoration: none"
+                  >Студия</a
+                >
+              </li>
 
-        <div class="list">
-          <ul>
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="mail-link"
-                style="text-decoration: none"
-              >
-                <svg class="icon-mail">
-                  <use xlink:href="./Images/icons/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
+              <li>
+                <a
+                  href="./portfolio.html"
+                  class="link"
+                  style="text-decoration: none"
+                  >Портфолио</a
+                >
+              </li>
+              <li>
+                <a href="" class="link" style="text-decoration: none"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
 
-            <li>
-              <a
-                href="tel:+"
-                class="link-telephone"
-                style="text-decoration: none"
-              >
-                <svg class="icon-telephone">
-                  <use
-                    xlink:href="./Images/icons/sprite.svg#icon-telephone"
-                  ></use>
-                </svg>
+          <div class="list">
+            <ul>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mail-link"
+                  style="text-decoration: none"
+                >
+                  <svg class="icon-mail" width="16" height="12">
+                    <use xlink:href="./Images/icons/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
 
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+              <li>
+                <a
+                  href="tel:+"
+                  class="link-telephone"
+                  style="text-decoration: none"
+                >
+                  <svg class="icon-telephone" width="10" height="16">
+                    <use
+                      xlink:href="./Images/icons/sprite.svg#icon-telephone"
+                    ></use>
+                  </svg>
+
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <section class="hero">
       <h1 class="hero-title">
@@ -180,7 +200,7 @@
                   <img
                     srcset="
                       ./Images/telephone-370.jpg 1x,
-                      ./Images/telephone-740.jpg  2x
+                      ./Images/telephone-740.jpg 2x
                     "
                     src="./Images/telephone-370.jpg"
                     alt="telephone"
@@ -676,6 +696,8 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
