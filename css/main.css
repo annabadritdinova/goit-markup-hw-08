@@ -344,7 +344,7 @@ h4 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1269,8 +1269,7 @@ h4 {
   padding: 40px;
   background-color: #ffffff;
   position: absolute;
-  width: 528px;
-  height: 600px;
+  width: 95%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(0deg);
@@ -1280,6 +1279,18 @@ h4 {
   transition: transform 300ms linear;
   transition: transform 300ms linear, -webkit-transform 300ms linear;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop .modal {
+    width: 528px;
+  }
 }
 
 .backdrop .modal .modal-close {
@@ -1314,13 +1325,27 @@ h4 {
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
-.backdrop .modal .modal-form button {
+@media screen and (min-width: 1200px) {
+  .backdrop .modal h2 {
+    line-height: 23px;
+  }
+}
+
+.modal-form ul {
+  display: block;
+}
+
+.modal-form ul li {
+  margin-left: 0px;
+}
+
+.modal-form button {
   background: #18a0fb;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1338,7 +1363,7 @@ h4 {
   padding: 10px 0px 10px 0px;
 }
 
-.backdrop .modal .modal-form svg {
+.modal-form svg {
   top: 28px;
   left: 15px;
   position: absolute;
@@ -1346,7 +1371,7 @@ h4 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop .modal .modal-form textarea {
+.modal-form textarea {
   width: 100%;
   height: 120px;
   margin-bottom: 20px;
@@ -1358,40 +1383,49 @@ h4 {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop .modal .modal-form textarea::-webkit-input-placeholder {
+.modal-form textarea::-webkit-input-placeholder {
   font-size: 12px;
 }
 
-.backdrop .modal .modal-form textarea:-ms-input-placeholder {
+.modal-form textarea:-ms-input-placeholder {
   font-size: 12px;
 }
 
-.backdrop .modal .modal-form textarea::-ms-input-placeholder {
+.modal-form textarea::-ms-input-placeholder {
   font-size: 12px;
 }
 
-.backdrop .modal .modal-form textarea::placeholder {
+.modal-form textarea::placeholder {
   font-size: 12px;
 }
 
-.backdrop .modal .modal-form textarea:focus {
+.modal-form textarea:focus {
   border: 1px solid #2196f3;
   outline-style: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.backdrop .modal .modal-form .modal-form-checkbox {
+.modal-form .modal-form-checkbox {
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 14px;
 }
 
-.backdrop .modal .modal-form .modal-form-checkbox input {
+@media screen and (min-width: 1200px) {
+  .modal-form .modal-form-checkbox {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.modal-form .modal-form-checkbox input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-.backdrop .modal .modal-form .modal-form-checkbox input:checked::after {
+.modal-form .modal-form-checkbox input:checked::after {
   display: inline-block;
   border: transparent;
   background: url(../Images/icons/icon-check.svg);
@@ -1399,52 +1433,44 @@ h4 {
   background-repeat: no-repeat;
 }
 
-.backdrop .modal .modal-form .modal-form-checkbox input::after {
+.modal-form .modal-form-checkbox input::after {
   content: "";
   display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 4px;
-  margin-left: 13px;
   margin-right: 7px;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop .modal .modal-form .modal-form-checkbox label {
+.modal-form .modal-form-checkbox label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
 }
 
-.backdrop .modal .modal-form .modal-form-checkbox input {
+.modal-form .modal-form-checkbox input {
   -moz-appearance: none;
        appearance: none;
   outline: none;
   -webkit-appearance: none;
 }
 
-.backdrop .modal .modal-form .modal-form-checkbox a {
+.modal-form .modal-form-checkbox a {
+  padding-top: 0px;
+  padding-bottom: 0px;
   color: #2196f3;
   text-decoration: underline;
   cursor: pointer;
 }
 
-.backdrop .modal .modal-form .modal-form-label {
+.modal-form .modal-form-label {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -1456,7 +1482,7 @@ h4 {
   color: #757575;
 }
 
-.backdrop .modal .modal-form .modal-form-input {
+.modal-form .modal-form-input {
   width: 100%;
   height: 40px;
   margin-top: 4px;
@@ -1467,14 +1493,14 @@ h4 {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop .modal .modal-form .modal-form-input:focus {
+.modal-form .modal-form-input:focus {
   border: 1px solid #2196f3;
   outline-style: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.backdrop .modal .modal-form .modal-form-input:focus-within + svg {
+.modal-form .modal-form-input:focus-within + svg {
   fill: #2196f3;
   outline-style: none;
 }
