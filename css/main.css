@@ -1005,7 +1005,7 @@ h4 {
 }
 
 .footer .container .bottom-content li a {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1016,7 +1016,7 @@ h4 {
 }
 
 .footer .container .bottom-content li .address {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1028,7 +1028,7 @@ h4 {
 
 .footer .container .bottom-content li .info-mail {
   color: #757575;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1041,7 +1041,7 @@ h4 {
 
 .footer .container .bottom-content li .info-phone {
   color: #757575;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1049,6 +1049,7 @@ h4 {
   letter-spacing: 0.03em;
   text-decoration: none;
   display: inline-block;
+  margin-bottom: 0px;
 }
 
 .footer .container .footer-links {
@@ -1189,7 +1190,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
