@@ -12,12 +12,13 @@
     width: 40px;
     display: inline-flex;
     justify-content: center;
+    align-items: center;
     margin: 0px;
     padding: 0px;
     border: 0px;
     background: transparent;
     transition: all $time;
-    outline: none ;
+    outline: none;
     .icon-cross {
       display: none;
     }
@@ -124,14 +125,14 @@
       .header-links {
         @media screen and (min-width: 768px) {
           display: flex;
-          
+
           li + li {
             margin-left: 50px;
           }
         }
 
         li {
-          &:hover{
+          &:hover {
             color: $accent-color;
           }
           text-align: center;
@@ -160,7 +161,6 @@
             position: static;
             padding-top: 32px;
             padding-bottom: 32px;
-            
           }
         }
 
@@ -169,7 +169,6 @@
           position: relative;
           display: block;
           .current-link {
-
             &::after {
               bottom: 30px;
               left: 0;
