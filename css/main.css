@@ -327,7 +327,7 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .header .container .site-nav .header-links .link-s .current-link::after {
-    bottom: -4px;
+    bottom: -1px;
   }
 }
 
