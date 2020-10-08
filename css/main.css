@@ -1731,6 +1731,7 @@ h4 {
 }
 
 .gallery ul .portfolio-card .card-thumb .card-action {
+  opacity: 0;
   height: 100%;
   font-style: normal;
   font-weight: normal;
