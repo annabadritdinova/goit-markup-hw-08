@@ -43,8 +43,6 @@
     text-decoration: none;
     text-align: center;
     position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
 
     @media screen and (min-width: 768px) {
       justify-content: flex-start;
@@ -79,16 +77,16 @@
     }
 
     .logo {
-      font-size: 26px;
-      padding-top: 24px;
-      padding-bottom: 24px;
+      font-size: 24px;
+      padding-top: 16px;
+      padding-bottom: 16px;
       margin-right: 93px;
       margin: 0px;
       display: block;
       align-self: center;
       font-family: $font-raleway;
       font-weight: bold;
-      line-height: 31px;
+      line-height: 28px;
       letter-spacing: 0.03em;
       text-decoration: none;
       color: $secondary-accent-color;
@@ -181,9 +179,6 @@
               background: $accent-color;
               border-radius: 2px;
               position: absolute;
-
-              
-
               @media screen and (min-width: 768px) {
                 bottom: -4px;
               }
@@ -214,7 +209,7 @@
     }
     .list {
       li:first-child {
-        margin-bottom: 16px;
+        margin-bottom: 10px;
         @media screen and (min-width: 1200px) {
           margin-right: 30px;
           margin-bottom: 0px;
